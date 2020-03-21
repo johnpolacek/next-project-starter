@@ -8,8 +8,8 @@ export default props => (
     <div
       id="docs"
       sx={{
-        pb: [2, 2, 3, 4],
-        maxWidth: "1100px",
+        py: [2, 2, 3, 4],
+        maxWidth: "800px",
         mx: "auto",
         width: "100%",
       }}
