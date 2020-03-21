@@ -217,16 +217,8 @@ export default props => (
       color: ${theme.colors.primary};
     }
 
-    @keyframes gradient-animation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+    #docs h2 {
+      padding-top: 32px;
     }
   `}</style>
 )
