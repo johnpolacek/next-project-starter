@@ -46,6 +46,14 @@ export default props => (
       background: #f4f4f4;
       display: inline-block;
     }
+    pre code {
+      padding: 0;
+      background: none;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 4px 6px;
+    }
     a {
       background-color: transparent;
     }
