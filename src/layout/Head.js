@@ -1,6 +1,10 @@
 import Head from "next/head"
 import PropTypes from "prop-types"
 
+const twitter="@johnpolacek" 
+const imageUrl="https://project-starter.now.sh/project-screenshot.png" 
+const imageAlt="Project Starter Screenshot"
+
 const DocHead = props => (
   <>
     <Head>
@@ -10,14 +14,14 @@ const DocHead = props => (
       <meta name="description" content={props.description} />
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
-      {props.imageUrl && <meta property="og:image" content={props.imageUrl} />}
-      {props.imageAlt && (
-        <meta property="og:image:alt" content={props.imageAlt} />
+      {imageUrl && <meta property="og:image" content={imageUrl} />}
+      {imageAlt && (
+        <meta property="og:image:alt" content={imageAlt} />
       )}
       <meta property="og:url" content={props.url} />
       <meta
         name="twitter:card"
-        content={props.imageUrl ? "summary_large_image" : "summary"}
+        content={imageUrl ? "summary_large_image" : "summary"}
       />
       {props.twitter && <meta name="twitter:site" content={props.twitter} />}
       {props.twitterAuthor && (
@@ -25,11 +29,11 @@ const DocHead = props => (
       )}
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
-      {props.imageUrl && (
-        <meta property="twitter:image" content={props.imageUrl} />
+      {imageUrl && (
+        <meta property="twitter:image" content={imageUrl} />
       )}
-      {props.imageAlt && (
-        <meta property="twitter:image:alt" content={props.imageAlt} />
+      {imageAlt && (
+        <meta property="twitter:image:alt" content={imageAlt} />
       )}
     </Head>
   </>

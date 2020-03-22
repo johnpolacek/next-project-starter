@@ -9,7 +9,7 @@ import Footer from "../ui/Footer"
 
 const Layout = props => (
   <>
-    <Head twitter="@johnpolacek" twitterAuthor="@johnpolacek" {...props} imageUrl="https://project-starter.now.sh/project-screenshote.png" imageAlt="Project Starter Screenshot" />
+    <Head {...props} />
 
     <div
       sx={{
