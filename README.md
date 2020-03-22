@@ -62,7 +62,7 @@ Expand, modify or delete these tests in `cypress/integration` folder. A custom c
 To run tests:
 
 ```
-npm run tests
+npm run test
 ```
 
 ## Deploy
