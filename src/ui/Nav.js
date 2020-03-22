@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import NavLink from "./NavLink.js"
+import NavLink from "./NavLink"
+import GithubLink from "./GithubLink"
 
 export default props => (
   <nav sx={{ display: "flex", flexWrap: "wrap" }}>
@@ -33,6 +34,7 @@ export default props => (
     <div sx={{ width: "75%", textAlign: "right", pr: [2, 3] }}>
       <NavLink href="/docs">Docs</NavLink>
       <NavLink href="/app">App</NavLink>
+      <GithubLink />
     </div>
   </nav>
 )
