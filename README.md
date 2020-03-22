@@ -33,6 +33,8 @@ If you are using Google Analytics or other services you need to embed on every p
 
 Refer to the [Next.js docs](https://nextjs.org/docs/basic-features/pages) for how to author pages and [set up routing](https://nextjs.org/docs/routing/introduction).
 
+Each page contains a `Layout` component with the `Header` and `Footer` components and a `Main` component for the page content itself. The `Layout` component accepts props for the url, title, description and more that are used to set meta tag data on each page - see `src/layout/Wrapper.js`.
+
 You can write long form content in markdown with [mdx](https://mdxjs.com/). For example, this project’s homepage content has been authored in markdown - see `src/markdown/Home.mdx` and these docs have been imported to `src/views/Docs.js` from the project’s top level `README.md` file.
 
 This starter project comes with its own components like in the `/src/ui` folder that you can use, customize or throw away. 
@@ -49,7 +51,7 @@ Configure your project’s color scheme, typography and other design system valu
 
 Edit global styles in `src/layout/Styles.js`.
 
-Style components using Theme UI’s [sx prop](https://theme-ui.com/sx-prop) or use its [built-in components](https://theme-ui.com/components). For more info, refer to the [Theme UI docs](https://theme-ui.com/theming).
+Style components using Theme UI’s [sx prop](https://theme-ui.com/sx-prop) or use its [built-in components](https://theme-ui.com/components). You can also drop in components from any [styled-system](https://styled-system.com/) compatible component framework, such as [Chakra UI](https://chakra-ui.com/). For more info, refer to the [Theme UI docs](https://theme-ui.com/theming).
 
 ## Tests
 
