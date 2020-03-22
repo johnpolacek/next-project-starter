@@ -19,7 +19,7 @@ const DocHead = props => (
         name="twitter:card"
         content={props.imageUrl ? "summary_large_image" : "summary"}
       />
-      {props.twitter && <meta name="twitter:site" content={twitter} />}
+      {props.twitter && <meta name="twitter:site" content={props.twitter} />}
       {props.twitterAuthor && (
         <meta name="twitter:creator" content={props.twitterAuthor} />
       )}

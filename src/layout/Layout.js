@@ -9,7 +9,7 @@ import Footer from "../ui/Footer"
 
 const Layout = props => (
   <>
-    <Head {...props} />
+    <Head twitter="@johnpolacek" twitterAuthor="@johnpolacek" {...props} imageUrl="https://project-starter.now.sh/project-screenshote.png" imageAlt="Project Starter Screenshot" />
 
     <div
       sx={{
@@ -33,8 +33,6 @@ Layout.propTypes = {
   url: PropTypes.string.isRequired,
   imageUrl: PropTypes.string,
   imageAlt: PropTypes.string,
-  twitter: PropTypes.string,
-  twitterAuthor: PropTypes.string,
 }
 
 export default Layout
