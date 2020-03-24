@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "onchange": "^6.1.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.2"
   }
 }
