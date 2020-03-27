@@ -4,15 +4,15 @@ import NavLink from "./NavLink"
 import GithubLink from "./GithubLink"
 
 export default props => (
-  <nav sx={{ display: "flex", flexWrap: "wrap" }}>
-    <div sx={{ width: "50%", pl: [2, 3] }}>
+  <nav sx={{ display: "flex", flexWrap: "wrap", py: [2, 0] }}>
+    <div sx={{ width: ["100%","50%"], pl: [0, 3], textAlign: ["center","left"] }}>
       <NavLink href="/">
         <h1
           sx={{
             color: "black",
             fontWeight: "inherit",
             m: 0,
-            fontSize: "inherit",
+            fontSize: "inherit"
           }}
         >
           <span
@@ -31,7 +31,7 @@ export default props => (
         </h1>
       </NavLink>
     </div>
-    <div sx={{ width: "50%", textAlign: "right", pr: [2, 3] }}>
+    <div sx={{ width: ["100%","50%"], textAlign: ["center","right"], pr: [0, 3] }}>
       <NavLink href="/docs">Docs</NavLink>
       <NavLink href="/app">App</NavLink>
       <GithubLink />

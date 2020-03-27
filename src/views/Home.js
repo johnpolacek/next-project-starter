@@ -8,7 +8,8 @@ export default props => (
     <div
       id="home"
       sx={{
-        pt: [2, 2, 3, 4],
+        pt: 4,
+        px: 3,
         maxWidth: "1100px",
         mx: "auto",
         textAlign: "center",
