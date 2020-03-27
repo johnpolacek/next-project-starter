@@ -5,7 +5,7 @@ import GithubLink from "./GithubLink"
 
 export default props => (
   <nav sx={{ display: "flex", flexWrap: "wrap" }}>
-    <div sx={{ width: "25%", pl: [2, 3] }}>
+    <div sx={{ width: "50%", pl: [2, 3] }}>
       <NavLink href="/">
         <h1
           sx={{
@@ -31,7 +31,7 @@ export default props => (
         </h1>
       </NavLink>
     </div>
-    <div sx={{ width: "75%", textAlign: "right", pr: [2, 3] }}>
+    <div sx={{ width: "50%", textAlign: "right", pr: [2, 3] }}>
       <NavLink href="/docs">Docs</NavLink>
       <NavLink href="/app">App</NavLink>
       <GithubLink />
