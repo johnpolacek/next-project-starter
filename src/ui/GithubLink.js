@@ -12,10 +12,10 @@ export default props => (
       px: [2, 2, 2, 2, 3],
       position: "relative",
       top: "7px",
-      opacity: .8,
-      '&:hover': {
+      opacity: 0.8,
+      "&:hover": {
         opacity: 1,
-      }
+      },
     }}
   >
     <svg

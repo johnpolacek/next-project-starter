@@ -10,13 +10,14 @@ export default props => (
       fontSize: 1,
     }}
   >
-    <span sx={{ mx: 3, display: 'inline-block' }}>
+    <span sx={{ mx: 3, display: "inline-block" }}>
       Created by <a href="https://johnpolacek">John Polacek</a>
     </span>
-    <span sx={{ mx: 3, display: 'inline-block' }}>
-      Open sourced on <a href="https://github.com/johnpolacek/project-starter">Github</a>
+    <span sx={{ mx: 3, display: "inline-block" }}>
+      Open sourced on{" "}
+      <a href="https://github.com/johnpolacek/project-starter">Github</a>
     </span>
-    <span sx={{ mx: 3, display: 'inline-block' }}>
+    <span sx={{ mx: 3, display: "inline-block" }}>
       Follow <a href="https://twitter.com/johnpolacek">@johnpolacek</a>
     </span>
   </footer>

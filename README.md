@@ -28,7 +28,6 @@ A global document head with `<title>`, `<description>`, `<meta>` tags and more c
 
 If you are using Google Analytics or other services you need to embed on every page, add them to the `Wrapper` component at `src/layout/Wrapper.js`
 
-
 ## Authoring
 
 Refer to the [Next.js docs](https://nextjs.org/docs/basic-features/pages) for how to author pages and [set up routing](https://nextjs.org/docs/routing/introduction).
@@ -37,13 +36,13 @@ Each page contains a `Layout` component with the `Header` and `Footer` component
 
 You can write long form content in markdown with [mdx](https://mdxjs.com/). For example, this project’s homepage content has been authored in markdown - see `src/markdown/Home.mdx` and these docs have been imported to `src/views/Docs.js` from the project’s top level `README.md` file.
 
-This starter project comes with its own components like in the `/src/ui` folder that you can use, customize or throw away. 
+This starter project comes with its own components like in the `/src/ui` folder that you can use, customize or throw away.
 
 ## Routing
 
 This project comes with some default routes - see the `/pages` folder. The `/app` route features a parameterized route that uses `AppContext` to switch between different color modes and share that state with different components, in this case the project’s `Main` component - see `src/views/App.js`, `src/context/AppContext.js` and `src/ui/Main.js`.
 
-Refer to the [Next.js docs](https://nextjs.org/docs/routing/introduction) for more info about how routing works. 
+Refer to the [Next.js docs](https://nextjs.org/docs/routing/introduction) for more info about how routing works.
 
 ## Styling
 
@@ -55,7 +54,7 @@ Style components using Theme UI’s [sx prop](https://theme-ui.com/sx-prop) or u
 
 ## Tests
 
-This project uses [Cypress](https://www.cypress.io/) for testing. Tests have been written for the landing page, docs and app. 
+This project uses [Cypress](https://www.cypress.io/) for testing. Tests have been written for the landing page, docs and app.
 
 Expand, modify or delete these tests in `cypress/integration` folder. A custom command written for testing the example App can be found in `cypress/support/commands.js`
 

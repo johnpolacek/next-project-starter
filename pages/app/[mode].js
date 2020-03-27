@@ -9,7 +9,8 @@ const Page = props => {
       url={"/app/" + props.mode}
       title={"Project Starter | App Mode " + props.mode.toUpperCase()}
       description={
-        props.mode.toUpperCase() + "Next.js Project Starter Example with parameterized route props"
+        props.mode.toUpperCase() +
+        "Next.js Project Starter Example with parameterized route props"
       }
     >
       <App {...props} />
