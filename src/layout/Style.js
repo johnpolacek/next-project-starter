@@ -26,8 +26,7 @@ export default props => (
     }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-family: ${theme.fonts.body};
     }
     hr {
       box-sizing: content-box;
@@ -194,6 +193,7 @@ export default props => (
       text-rendering: optimizelegibility;
       line-height: 1.2;
       margin: 0 0 16px;
+      font-family: ${theme.fonts.heading};
     }
     input,
     select,
