@@ -13,7 +13,15 @@ const Feature = props => (
     <h3 sx={{ color: "primary" }}>{props.title}</h3>
     <ul sx={{ p: 0, m: 0 }}>
       {props.benefits.map(b => (
-        <li key={b.toLowerCase().split(' ').join('-')} sx={{ listStyle: "none", mb: 1 }}>{b}</li>
+        <li
+          key={b
+            .toLowerCase()
+            .split(" ")
+            .join("-")}
+          sx={{ listStyle: "none", mb: 1 }}
+        >
+          {b}
+        </li>
       ))}
     </ul>
     {props.href && (
