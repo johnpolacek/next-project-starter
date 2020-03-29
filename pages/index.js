@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
 import Wrapper from "../src/layout/Wrapper"
 import Home from "../src/views/Home"
 
