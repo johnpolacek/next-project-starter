@@ -10,7 +10,7 @@ const NavLink = props => {
     <Link href={props.href}>
       <a
         sx={{
-          py: [2,3],
+          py: [2, 3],
           px: 3,
           fontSize: 3,
           fontWeight: 200,
