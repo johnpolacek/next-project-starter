@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 import PropTypes from "prop-types"
 import Head from "./Head"
 import Style from "./Style"
@@ -11,7 +10,7 @@ const Layout = props => (
   <>
     <Head {...props} />
 
-    <div
+    <Box
       sx={{
         display: "flex",
         minHeight: "100vh",
@@ -21,7 +20,7 @@ const Layout = props => (
       <Header />
       <Main>{props.children}</Main>
       <Footer />
-    </div>
+    </Box>
 
     <Style />
   </>
