@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import React, { useContext, useEffect } from "react"
+import React, { useContext } from "react"
 import { AppContext } from "../context/AppContext"
 
 export default props => {
