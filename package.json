@@ -14,17 +14,17 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
-    "@mdx-js/loader": "^1.5.8",
-    "@next/mdx": "^9.3.2",
-    "cypress": "^4.2.0",
-    "next": "^9.3.2",
+    "@mdx-js/loader": "^1.6.14",
+    "@next/mdx": "^9.4.4",
+    "cypress": "^4.11.0",
+    "next": "^9.4.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
-    "onchange": "^6.1.0",
+    "onchange": "^6.1.1",
     "prettier": "^2.0.5"
   }
 }
