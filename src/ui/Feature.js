@@ -25,14 +25,12 @@ const Feature = props => (
       ))}
     </ul>
     {props.href && (
-      <Link href={props.href}>
-        <a
-          href={props.href}
-          sx={{ display: "block", fontStyle: "italic", mt: 3, fontSize: 0 }}
-        >
-          Find out more
-        </a>
-      </Link>
+      <a
+        href={props.href}
+        sx={{ display: "block", fontStyle: "italic", mt: 3, fontSize: 0 }}
+      >
+        Find out more
+      </a>
     )}
   </div>
 )
