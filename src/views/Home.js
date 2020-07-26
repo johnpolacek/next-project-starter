@@ -8,7 +8,7 @@ export default props => (
     <div
       id="home"
       sx={{
-        pt: 4,
+        pt: [5,6],
         px: 3,
         maxWidth: "1100px",
         mx: "auto",

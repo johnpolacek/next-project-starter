@@ -10,7 +10,7 @@ const Feature = props => (
       py: 4,
     }}
   >
-    <h3 sx={{ color: "primary" }}>{props.title}</h3>
+    <h3 sx={{ fontSize: 4, color: "primary" }}>{props.title}</h3>
     <ul sx={{ p: 0, m: 0 }}>
       {props.benefits.map(b => (
         <li
