@@ -13,7 +13,7 @@
     "deploy": "npm run test && git push origin master && now --prod"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^10.0.34",
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.4.4",
     "cypress": "^4.11.0",
