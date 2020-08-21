@@ -1,7 +1,7 @@
 import Wrapper from "../../src/layout/Wrapper"
 import App from "../../src/views/App"
 
-const Page = props => {
+const AppModePage = props => {
   return (
     <Wrapper
       url={"/app/" + props.mode}
@@ -16,8 +16,8 @@ const Page = props => {
   )
 }
 
-Page.getInitialProps = ({ query }) => {
+AppModePage.getInitialProps = ({ query }) => {
   return { ...query }
 }
 
-export default Page
+export default AppModePage

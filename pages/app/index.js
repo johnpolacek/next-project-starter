@@ -1,7 +1,7 @@
 import Wrapper from "../../src/layout/Wrapper"
 import App from "../../src/views/App"
 
-const Page = props => {
+const AppIndexPage = props => {
   return (
     <Wrapper
       url={"/app/"}
@@ -15,8 +15,8 @@ const Page = props => {
   )
 }
 
-Page.getInitialProps = ({ query }) => {
+AppIndexPage.getInitialProps = ({ query }) => {
   return { ...query }
 }
 
-export default Page
+export default AppIndexPage

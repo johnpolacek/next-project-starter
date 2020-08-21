@@ -5,7 +5,7 @@ import { AppProvider } from "../context/AppContext"
 import Layout from "./Layout"
 import Theme from "./Theme"
 
-export default props => {
+const Wrapper = props => {
   // Want Google Analytics? --> https://github.com/react-ga/react-ga --> add your UI code below
   // ReactGA.initialize("UA-1234567-89")
   // ReactGA.set({ anonymizeIp: true })
@@ -21,3 +21,5 @@ export default props => {
     </ThemeProvider>
   )
 }
+
+export default Wrapper

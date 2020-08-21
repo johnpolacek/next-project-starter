@@ -3,7 +3,7 @@ import Home from "../src/views/Home"
 
 // Note: It is recommended for SEO that you have a different title and description for each page
 
-export default () => (
+const IndexPage = () => (
   <Wrapper
     url="/"
     title="Project Starter"
@@ -12,3 +12,5 @@ export default () => (
     <Home />
   </Wrapper>
 )
+
+export default IndexPage
