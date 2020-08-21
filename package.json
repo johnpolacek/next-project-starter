@@ -16,7 +16,7 @@
     "@emotion/core": "^10.0.35",
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.2",
-    "cypress": "^4.12.1",
+    "cypress": "^5.0.0",
     "next": "^9.5.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
