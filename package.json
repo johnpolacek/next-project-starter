@@ -15,7 +15,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@mdx-js/loader": "^1.6.16",
-    "@next/mdx": "^9.5.2",
+    "@next/mdx": "^9.5.3",
     "cypress": "^4.12.1",
     "next": "^9.5.2",
     "prop-types": "^15.7.2",
