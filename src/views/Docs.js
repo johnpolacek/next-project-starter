@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { MDXProvider } from "@mdx-js/react"
 import MarkdownContent from "../../README.md"
 
-export default props => (
+export default (props) => (
   <MDXProvider>
     <div
       id="docs"

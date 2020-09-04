@@ -1,7 +1,7 @@
 import Wrapper from "../../src/layout/Wrapper"
 import App from "../../src/views/App"
 
-const AppModePage = props => {
+const AppModePage = (props) => {
   return (
     <Wrapper
       url={"/app/" + props.mode}

@@ -1,7 +1,7 @@
 import { Box } from "theme-ui"
 import Feature from "./Feature"
 
-const Features = props => (
+const Features = (props) => (
   <Box
     sx={{
       display: "flex",

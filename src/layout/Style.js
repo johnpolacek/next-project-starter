@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import theme from "./Theme"
 
-const Style = props => (
+const Style = (props) => (
   <style jsx global>{`
     button,
     hr,

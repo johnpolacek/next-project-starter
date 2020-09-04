@@ -3,21 +3,20 @@ import { Box, Text, jsx } from "theme-ui"
 import PropTypes from "prop-types"
 import Link from "next/link"
 
-const Feature = props => (
+const Feature = (props) => (
   <Box
     sx={{
       width: ["100%", "50%", "33.33%"],
       py: 4,
     }}
   >
-    <Text as="h3" sx={{ fontSize: 4, color: "primary", pb:3 }}>{props.title}</Text>
+    <Text as="h3" sx={{ fontSize: 4, color: "primary", pb: 3 }}>
+      {props.title}
+    </Text>
     <ul sx={{ p: 0, m: 0 }}>
-      {props.benefits.map(b => (
+      {props.benefits.map((b) => (
         <li
-          key={b
-            .toLowerCase()
-            .split(" ")
-            .join("-")}
+          key={b.toLowerCase().split(" ").join("-")}
           sx={{ listStyle: "none", mb: 1 }}
         >
           {b}

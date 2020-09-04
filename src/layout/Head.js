@@ -5,7 +5,7 @@ const twitter = "@johnpolacek"
 const imageUrl = "https://project-starter.now.sh/project-screenshot.png"
 const imageAlt = "Project Starter Screenshot"
 
-const DocHead = props => (
+const DocHead = (props) => (
   <>
     <Head>
       <title>{props.title}</title>

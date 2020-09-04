@@ -6,7 +6,7 @@ import Header from "../ui/Header"
 import Main from "../ui/Main"
 import Footer from "../ui/Footer"
 
-const Layout = props => (
+const Layout = (props) => (
   <>
     <Head {...props} />
 

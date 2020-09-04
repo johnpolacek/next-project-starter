@@ -4,7 +4,7 @@ import React, { useContext, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
 import ButtonLink from "../ui/ButtonLink"
 
-export default props => {
+export default (props) => {
   const { setMode } = useContext(AppContext)
 
   // useEffect updates the AppContext mode when the url route changes

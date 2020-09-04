@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const GithubLink = props => (
+const GithubLink = (props) => (
   <a
     href="https://github.com/johnpolacek/project-starter"
     title="Go to Project on Github"

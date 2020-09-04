@@ -1,7 +1,7 @@
 import Wrapper from "../../src/layout/Wrapper"
 import App from "../../src/views/App"
 
-const AppIndexPage = props => {
+const AppIndexPage = (props) => {
   return (
     <Wrapper
       url={"/app/"}

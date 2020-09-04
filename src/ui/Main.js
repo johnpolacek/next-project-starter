@@ -2,7 +2,7 @@ import { Box } from "theme-ui"
 import React, { useContext } from "react"
 import { AppContext } from "../context/AppContext"
 
-const Main = props => {
+const Main = (props) => {
   const { mode } = useContext(AppContext)
 
   return (

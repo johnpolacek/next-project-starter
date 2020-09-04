@@ -9,8 +9,8 @@ const DownloadLink = (props) => (
     sx={{
       textDecoration: "none",
       fontSize: 3,
-      mt: 3, 
-      mb: [5,6],
+      mt: 3,
+      mb: [5, 6],
       px: 4,
       py: 3,
       bg: "primary",
@@ -22,7 +22,14 @@ const DownloadLink = (props) => (
       display: "inline-block",
     }}
     href="https://github.com/johnpolacek/project-starter/archive/master.zip"
-  ><img sx={{position:"relative", top:"2px", left: "-8px"}} src="/download.svg" alt="" />Download</a>
+  >
+    <img
+      sx={{ position: "relative", top: "2px", left: "-8px" }}
+      src="/download.svg"
+      alt=""
+    />
+    Download
+  </a>
 )
 
 export default DownloadLink
