@@ -1,9 +1,8 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 import Feature from "./Feature"
 
-export default props => (
-  <div
+const Features = props => (
+  <Box
     sx={{
       display: "flex",
       flexWrap: "wrap",
@@ -65,5 +64,7 @@ export default props => (
       ]}
       href="/docs"
     />
-  </div>
+  </Box>
 )
+
+export default Features

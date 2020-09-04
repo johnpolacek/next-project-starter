@@ -1,13 +1,13 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 import React, { useContext } from "react"
 import { AppContext } from "../context/AppContext"
 
-export default props => {
+const Main = props => {
   const { mode } = useContext(AppContext)
 
   return (
-    <main
+    <Box
+      as="main"
       sx={{
         display: "flex",
         flex: 1,
@@ -24,3 +24,5 @@ export default props => {
     />
   )
 }
+
+export default Main

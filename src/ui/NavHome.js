@@ -1,10 +1,10 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Text } from "theme-ui"
 import NavLink from "./NavLink"
 
-export default props => (
+const NavHome = props => (
   <NavLink href="/">
-    <h1
+    <Text
+      as="h1"
       sx={{
         color: "black",
         fontWeight: "inherit",
@@ -25,6 +25,8 @@ export default props => (
         </span>
       </span>
       <span>Project Starter</span>
-    </h1>
+    </Text>
   </NavLink>
 )
+
+export default NavHome

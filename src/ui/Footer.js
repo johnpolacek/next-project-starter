@@ -1,8 +1,8 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 
-export default props => (
-  <footer
+const Footer = props => (
+  <Box
+    as="footer"
     sx={{
       p: 4,
       color: "#AAA",
@@ -10,15 +10,17 @@ export default props => (
       fontSize: 1,
     }}
   >
-    <span sx={{ mx: 3, display: "inline-block" }}>
+    <Box as="span" sx={{ mx: 3, display: "inline-block" }}>
       Created by <a href="https://johnpolacek">John Polacek</a>
-    </span>
-    <span sx={{ mx: 3, display: "inline-block" }}>
+    </Box>
+    <Box as="span" sx={{ mx: 3, display: "inline-block" }}>
       Open sourced on{" "}
       <a href="https://github.com/johnpolacek/project-starter">Github</a>
-    </span>
-    <span sx={{ mx: 3, display: "inline-block" }}>
+    </Box>
+    <Box as="span" sx={{ mx: 3, display: "inline-block" }}>
       Follow <a href="https://twitter.com/johnpolacek">@johnpolacek</a>
-    </span>
-  </footer>
+    </Box>
+  </Box>
 )
+
+export default Footer

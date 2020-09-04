@@ -1,17 +1,16 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 import NavHome from "./NavHome"
 import NavLink from "./NavLink"
 import GithubLink from "./GithubLink"
 
-export default props => (
-  <nav sx={{ display: "flex", flexWrap: "wrap", py: [2, 0] }}>
-    <div
+const Nav = props => (
+  <Box as="nav" sx={{ display: "flex", flexWrap: "wrap", py: [2, 0] }}>
+    <Box
       sx={{ width: ["100%", "50%"], pl: [0, 3], textAlign: ["center", "left"] }}
     >
       <NavHome />
-    </div>
-    <div
+    </Box>
+    <Box
       sx={{
         width: ["100%", "50%"],
         textAlign: ["center", "right"],
@@ -21,6 +20,8 @@ export default props => (
       <NavLink href="/docs">Docs</NavLink>
       <NavLink href="/app">App</NavLink>
       <GithubLink />
-    </div>
-  </nav>
+    </Box>
+  </Box>
 )
+
+export default Nav

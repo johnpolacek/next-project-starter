@@ -1,16 +1,16 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box, Text, jsx } from "theme-ui"
 import PropTypes from "prop-types"
 import Link from "next/link"
 
 const Feature = props => (
-  <div
+  <Box
     sx={{
       width: ["100%", "50%", "33.33%"],
       py: 4,
     }}
   >
-    <h3 sx={{ fontSize: 4, color: "primary" }}>{props.title}</h3>
+    <Text as="h3" sx={{ fontSize: 4, color: "primary" }}>{props.title}</Text>
     <ul sx={{ p: 0, m: 0 }}>
       {props.benefits.map(b => (
         <li
@@ -32,7 +32,7 @@ const Feature = props => (
         Find out more
       </a>
     )}
-  </div>
+  </Box>
 )
 
 Feature.propTypes = {

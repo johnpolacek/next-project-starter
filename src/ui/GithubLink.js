@@ -1,9 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-// eslint-disable-next-line
-import React from "react"
 
-export default props => (
+const GithubLink = props => (
   <a
     href="https://github.com/johnpolacek/project-starter"
     title="Go to Project on Github"
@@ -33,3 +31,5 @@ export default props => (
     </svg>
   </a>
 )
+
+export default GithubLink
