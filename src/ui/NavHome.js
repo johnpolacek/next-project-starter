@@ -12,7 +12,8 @@ const NavHome = props => (
         fontSize: "inherit",
       }}
     >
-      <span
+      <Text
+        as="span"
         sx={{
           pr: 2,
           position: "relative",
@@ -20,11 +21,11 @@ const NavHome = props => (
           color: "primary",
         }}
       >
-        <span sx={{ letterSpacing: "2px", display: "inline-block" }}>
+        <Text as="span" sx={{ letterSpacing: "2px", display: "inline-block" }}>
           &lt;/&gt;
-        </span>
-      </span>
-      <span>Project Starter</span>
+        </Text>
+      </Text>
+      <Text as="span">Project Starter</Text>
     </Text>
   </NavLink>
 )
