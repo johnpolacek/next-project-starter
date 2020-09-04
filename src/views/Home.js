@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { MDXProvider } from "@mdx-js/react"
 import MarkdownContent from "../markdown/home.mdx"
 
-export default (props) => (
+const Home = (props) => (
   <MDXProvider>
     <div
       id="home"
@@ -19,3 +19,5 @@ export default (props) => (
     </div>
   </MDXProvider>
 )
+
+export default Home
