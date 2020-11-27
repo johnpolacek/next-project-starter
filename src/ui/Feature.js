@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { Box, Text, jsx } from "theme-ui"
 import PropTypes from "prop-types"
