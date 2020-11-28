@@ -8,7 +8,7 @@ const Feature = (props) => (
   <Box
     sx={{
       width: ["100%", "50%", "33.33%"],
-      py: 4,
+      pb: 5,
     }}
   >
     <Text as="h3" sx={{ fontSize: 4, color: "primary", pb: 3 }}>
