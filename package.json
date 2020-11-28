@@ -13,12 +13,11 @@
     "deploy": "npm run test && git push origin master && now --prod"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.35",
+    "@babel/runtime": "^7.12.5",
     "@mdx-js/loader": "^1.6.21",
     "@next/mdx": "^10.0.3",
     "cypress": "^6.0.0",
     "next": "^10.0.3",
-    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "theme-ui": "^0.3.4"
@@ -26,6 +25,9 @@
   "devDependencies": {
     "onchange": "^7.1.0",
     "prettier": "^2.2.0"
+  },
+  "resolutions": {
+    "@babel/runtime": "^7.12.5"
   },
   "repository": "https://github.com/johnpolacek/project-starter",
   "license": "MIT-0"
