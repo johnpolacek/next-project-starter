@@ -5,9 +5,12 @@ import Home from "../src/views/Home"
 
 const IndexPage = () => (
   <Wrapper
-    url="/"
+    url="https://next-project-starter.vercel.app/"
     title="Next Project Starter"
     description="Get your next React project up and running quickly with Next.js, Theme UI, MDX and more."
+    twitter="johnpolacek"
+    imageUrl="https://next-project-starter.vercel.app/project-logo.png"
+    imageAlt="Next Project Starter Logo"
   >
     <Home />
   </Wrapper>
