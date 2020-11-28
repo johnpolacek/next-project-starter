@@ -1,5 +1,5 @@
 {
-  "name": "project-starter",
+  "name": "next-project-starter",
   "description": "Get your next React project up and running quickly with Next.js, Theme UI, MDX and more.",
   "version": "0.1.2",
   "scripts": {
@@ -29,6 +29,6 @@
   "resolutions": {
     "@babel/runtime": "^7.12.5"
   },
-  "repository": "https://github.com/johnpolacek/project-starter",
+  "repository": "https://github.com/johnpolacek/next-project-starter",
   "license": "MIT-0"
 }

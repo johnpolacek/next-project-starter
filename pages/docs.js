@@ -6,8 +6,8 @@ import Docs from "../src/views/Docs"
 const DocsPage = () => (
   <Wrapper
     url="/docs"
-    title="Project Starter Docs"
-    description="Project Starter Docs for building Web Apps with Next.js, Theme UI, Cypress"
+    title="Next Project Starter Docs"
+    description="Next Project Starter Docs for building Web Apps with Next.js, Theme UI, Cypress"
   >
     <Docs />
   </Wrapper>

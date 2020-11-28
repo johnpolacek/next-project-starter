@@ -25,7 +25,7 @@ const NavHome = (props) => (
           &lt;/&gt;
         </Text>
       </Text>
-      <Text as="span">Project Starter</Text>
+      <Text as="span">Next Project Starter</Text>
     </Text>
   </NavLink>
 )

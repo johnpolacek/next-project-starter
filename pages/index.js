@@ -6,8 +6,8 @@ import Home from "../src/views/Home"
 const IndexPage = () => (
   <Wrapper
     url="/"
-    title="Project Starter"
-    description="Project Starter for Web Apps with Next.js, Theme UI, Cypress"
+    title="Next Project Starter"
+    description="Get your next React project up and running quickly with Next.js, Theme UI, MDX and more."
   >
     <Home />
   </Wrapper>
