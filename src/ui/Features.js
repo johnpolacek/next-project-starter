@@ -58,7 +58,7 @@ const Features = (props) => (
       benefits={[
         "Application Shell UI",
         "Configurable Theme",
-        "Deploys to Now",
+        "Deploy to Vercel",
         "Organized component library",
         "AppContext Example",
       ]}
