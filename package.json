@@ -10,17 +10,17 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
     "test": "cypress run",
-    "deploy": "npm run test && git push origin main && now --prod"
+    "deploy": "npm run test && git push origin main && vercel --prod"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.0.3",
-    "cypress": "^6.1.0",
-    "next": "^10.0.3",
+    "@next/mdx": "^10.0.4",
+    "cypress": "^6.2.0",
+    "next": "^10.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "theme-ui": "^0.3.4"
+    "theme-ui": "^0.3.5"
   },
   "devDependencies": {
     "onchange": "^7.1.0",
