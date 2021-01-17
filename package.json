@@ -15,9 +15,9 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.0.4",
-    "cypress": "^6.2.0",
-    "next": "^10.0.4",
+    "@next/mdx": "^10.0.5",
+    "cypress": "^6.2.1",
+    "next": "^10.0.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "theme-ui": "^0.3.5"
