@@ -1,6 +1,3 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx } from "theme-ui"
 import { ThemeProvider } from "theme-ui"
 import { AppProvider } from "../context/AppContext"
 import Layout from "./Layout"

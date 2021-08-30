@@ -1,9 +1,7 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Button } from "theme-ui"
 
 export default (props) => (
-  <button
+  <Button
     disabled={props.disabled}
     sx={{
       fontSize: 3,

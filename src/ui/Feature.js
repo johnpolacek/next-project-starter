@@ -1,8 +1,5 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { Box, Text, jsx } from "theme-ui"
+import { Box, Text, Link } from "theme-ui"
 import PropTypes from "prop-types"
-import Link from "next/link"
 
 const Feature = (props) => (
   <Box
@@ -14,23 +11,23 @@ const Feature = (props) => (
     <Text as="h3" sx={{ fontSize: 4, color: "primary", pb: 3 }}>
       {props.title}
     </Text>
-    <ul sx={{ p: 0, m: 0 }}>
+    <Box as="ul" sx={{ p: 0, m: 0 }}>
       {props.benefits.map((b) => (
-        <li
+        <Box as="li"
           key={b.toLowerCase().split(" ").join("-")}
           sx={{ listStyle: "none", mb: 1 }}
         >
           {b}
-        </li>
+        </Box>
       ))}
-    </ul>
+    </Box>
     {props.href && (
-      <a
+      <Link
         href={props.href}
         sx={{ display: "block", fontStyle: "italic", mt: 3, fontSize: 0 }}
       >
         Find out more
-      </a>
+      </Link>
     )}
   </Box>
 )
