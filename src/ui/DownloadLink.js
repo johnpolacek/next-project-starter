@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 const DownloadLink = (props) => (
   <Link
-    download
     sx={{
       textDecoration: "none",
       fontSize: 3,
@@ -19,7 +18,7 @@ const DownloadLink = (props) => (
       cursor: "pointer",
       display: "inline-block",
     }}
-    href="https://github.com/johnpolacek/next-project-starter/archive/refs/heads/main.zip"
+    href="https://github.com/johnpolacek/next-project-starter"
   >
     <Image
       sx={{ position: "relative", top: "2px", left: "-8px" }}
