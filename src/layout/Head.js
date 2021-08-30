@@ -11,7 +11,9 @@ const DocHead = (props) => (
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       {props.imageUrl && <meta property="og:image" content={props.imageUrl} />}
-      {props.imageAlt && <meta property="og:image:alt" content={props.imageAlt} />}
+      {props.imageAlt && (
+        <meta property="og:image:alt" content={props.imageAlt} />
+      )}
       <meta property="og:url" content={props.url} />
       <meta
         name="twitter:card"
@@ -21,8 +23,12 @@ const DocHead = (props) => (
       <meta name="twitter:creator" content={props.twitter} />
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
-      {props.imageUrl && <meta property="twitter:image" content={props.imageUrl} />}
-      {props.imageAlt && <meta property="twitter:image:alt" content={props.imageAlt} />}
+      {props.imageUrl && (
+        <meta property="twitter:image" content={props.imageUrl} />
+      )}
+      {props.imageAlt && (
+        <meta property="twitter:image:alt" content={props.imageAlt} />
+      )}
     </Head>
   </>
 )

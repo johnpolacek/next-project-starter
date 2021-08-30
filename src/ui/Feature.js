@@ -13,7 +13,8 @@ const Feature = (props) => (
     </Text>
     <Box as="ul" sx={{ p: 0, m: 0 }}>
       {props.benefits.map((b) => (
-        <Box as="li"
+        <Box
+          as="li"
           key={b.toLowerCase().split(" ").join("-")}
           sx={{ listStyle: "none", mb: 1 }}
         >
