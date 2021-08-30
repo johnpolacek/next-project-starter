@@ -1,11 +1,8 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Link, Image } from "theme-ui"
 import PropTypes from "prop-types"
-import Link from "next/link"
 
 const DownloadLink = (props) => (
-  <a
+  <Link
     download
     sx={{
       textDecoration: "none",
@@ -22,15 +19,15 @@ const DownloadLink = (props) => (
       cursor: "pointer",
       display: "inline-block",
     }}
-    href="https://github.com/johnpolacek/project-starter/archive/master.zip"
+    href="https://github.com/johnpolacek/next-project-starter/archive/refs/heads/main.zip"
   >
-    <img
+    <Image
       sx={{ position: "relative", top: "2px", left: "-8px" }}
       src="/download.svg"
       alt=""
     />
     Download
-  </a>
+  </Link>
 )
 
 export default DownloadLink
