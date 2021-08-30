@@ -1,7 +1,7 @@
 {
   "name": "next-project-starter",
   "description": "Get your next React project up and running quickly with Next.js, Theme UI, MDX and more.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "cypress": "cypress open",
     "dev": "next",
