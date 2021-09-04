@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Box, Text } from "theme-ui"
 import React, { useContext, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
 import ButtonLink from "../ui/ButtonLink"
@@ -15,7 +15,7 @@ const App = (props) => {
   }, [props.mode])
 
   return (
-    <div
+    <Box
       sx={{
         maxWidth: "1100px",
         mx: "auto",
@@ -23,11 +23,11 @@ const App = (props) => {
         pb: 5,
       }}
     >
-      <h2 sx={{ pb: 4, color: props.mode ? "white" : "black" }}>
+      <Text as="h2" sx={{ pb: 4, color: props.mode ? "white" : "black" }}>
         {props.mode
           ? "You selected " + props.mode.toUpperCase()
           : "Select a mode"}
-      </h2>
+      </Text>
       <ButtonLink
         href={props.mode === "red" ? "/app" : "/app?mode=red"}
         as={props.mode === "red" ? "/app" : "/app/red"}
@@ -70,7 +70,7 @@ const App = (props) => {
       >
         Blue
       </ButtonLink>
-    </div>
+    </Box>
   )
 }
 
