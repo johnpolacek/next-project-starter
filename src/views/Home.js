@@ -1,12 +1,10 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Box } from "theme-ui"
 import { MDXProvider } from "@mdx-js/react"
 import MarkdownContent from "../markdown/home.mdx"
 
 const Home = (props) => (
   <MDXProvider>
-    <div
+    <Box
       id="home"
       sx={{
         pt: [5, 6],
@@ -17,7 +15,7 @@ const Home = (props) => (
       }}
     >
       <MarkdownContent />
-    </div>
+    </Box>
   </MDXProvider>
 )
 
