@@ -1,12 +1,10 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Button as A } from "theme-ui"
 import PropTypes from "prop-types"
 import Link from "next/link"
 
 const ButtonLink = (props) => (
   <Link as={props.as || props.href} href={props.href}>
-    <a
+    <A
       disabled={props.disabled}
       sx={{
         textDecoration: "none",

@@ -1,6 +1,4 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Box, Text } from "theme-ui"
+import { Box, Text } from "theme-ui"
 import React, { useContext, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
 import ButtonLink from "../ui/ButtonLink"
