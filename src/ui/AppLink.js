@@ -1,7 +1,7 @@
 import { Link as A } from "theme-ui"
 import Link from "next/link"
 
-const AppLink = ({children, as, href, bg, mode, disabled}) => (
+const AppLink = ({ children, as, href, bg, mode, disabled }) => (
   <Link as={as || href} href={href}>
     <A
       disabled={disabled}
@@ -23,7 +23,9 @@ const AppLink = ({children, as, href, bg, mode, disabled}) => (
         cursor: "pointer",
         display: "inline-block",
       }}
-      >{children}</A>
+    >
+      {children}
+    </A>
   </Link>
 )
 
