@@ -1,7 +1,7 @@
 import { Box, Text } from "theme-ui"
 import React, { useContext, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
-import ButtonLink from "../ui/ButtonLink"
+import AppLink from "../ui/AppLink"
 
 const App = (props) => {
   const { setMode } = useContext(AppContext)
@@ -26,48 +26,30 @@ const App = (props) => {
           ? "You selected " + props.mode.toUpperCase()
           : "Select a mode"}
       </Text>
-      <ButtonLink
+      <AppLink
         href={props.mode === "red" ? "/app" : "/app?mode=red"}
         as={props.mode === "red" ? "/app" : "/app/red"}
-        sx={{
-          border: "2px solid",
-          borderColor: props.mode === "red" ? "white" : "red",
-          bg: "red",
-          mx: [2, 3],
-          width: [1, "180px"],
-          transition: "border-color 200ms linear",
-        }}
+        mode={props.mode}
+        bg="red"
       >
         Red
-      </ButtonLink>
-      <ButtonLink
+      </AppLink>
+      <AppLink
         href={props.mode === "green" ? "/app" : "/app?mode=green"}
         as={props.mode === "green" ? "/app" : "/app/green"}
-        sx={{
-          border: "2px solid",
-          borderColor: props.mode === "green" ? "white" : "green",
-          bg: "green",
-          mx: [2, 3],
-          width: [1, "180px"],
-          transition: "border-color 200ms linear",
-        }}
+        mode={props.mode}
+        bg="green"
       >
         Green
-      </ButtonLink>
-      <ButtonLink
+      </AppLink>
+      <AppLink
         href={props.mode === "blue" ? "/app" : "/app?mode=blue"}
         as={props.mode === "blue" ? "/app" : "/app/blue"}
-        sx={{
-          border: "2px solid",
-          borderColor: props.mode === "blue" ? "white" : "blue",
-          bg: "blue",
-          mx: [2, 3],
-          width: [1, "180px"],
-          transition: "border-color 200ms linear",
-        }}
+        mode={props.mode}
+        bg="blue"
       >
         Blue
-      </ButtonLink>
+      </AppLink>
     </Box>
   )
 }

@@ -1,4 +1,4 @@
-import { Button as A } from "theme-ui"
+import { Link as A } from "theme-ui"
 import PropTypes from "prop-types"
 import Link from "next/link"
 
