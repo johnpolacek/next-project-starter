@@ -11,6 +11,7 @@ const Main = (props) => {
       sx={{
         display: "flex",
         flex: 1,
+        minHeight: "80vh",
         px: [3, 4],
         pb: 4,
         alignItems: "center",

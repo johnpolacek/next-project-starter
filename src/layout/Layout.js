@@ -2,29 +2,15 @@ import { Box } from "theme-ui"
 import PropTypes from "prop-types"
 import Head from "./Head"
 import Style from "./Style"
-import Header from "../ui/Header"
 import Main from "../ui/Main"
 import Transition from "./Transition"
-import Footer from "../ui/Footer"
 
 const Layout = (props) => (
   <>
     <Head {...props} />
-
-    <Box
-      sx={{
-        display: "flex",
-        minHeight: "100vh",
-        flexDirection: "column",
-      }}
-    >
-      <Header />
-      <Main>
-        <Transition>{props.children}</Transition>
-      </Main>
-      <Footer />
-    </Box>
-
+    <Main>
+      <Transition>{props.children}</Transition>
+    </Main>
     <Style />
   </>
 )
