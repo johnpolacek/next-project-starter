@@ -6,10 +6,6 @@ Cypress.Commands.add("switchModes", (modes) => {
       .should("contain", "You selected " + mode.toUpperCase())
       .should("be.visible")
     cy.get("h2").should("not.contain", "Select a mode")
-    // click again to switch back
-    cy.get("a").contains(mode).click()
-    cy.get("h2").should("not.contain", "You selected " + mode.toUpperCase())
-    cy.get("h2").should("contain", "Select a mode").should("be.visible")
   })
 })
 
