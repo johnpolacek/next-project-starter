@@ -1,10 +1,10 @@
+import React from "react"
 import { Link as A } from "theme-ui"
 import Link from "next/link"
 
-const AppLink = ({ children, as, href, bg, mode, disabled }) => (
-  <Link as={as || href} href={href}>
+const AppLink = ({ children, href, bg, mode, disabled }) => (
+  <Link passHref href={disabled ? "#" : href }>
     <A
-      disabled={disabled}
       sx={{
         border: "2px solid",
         borderColor: mode === bg ? "white" : bg,
@@ -19,7 +19,7 @@ const AppLink = ({ children, as, href, bg, mode, disabled }) => (
         color: "#fff",
         boxShadow: "none",
         borderRadius: "4px",
-        border: "none",
+        pointerEvents: disabled ? "none" : "auto",
         cursor: "pointer",
         display: "inline-block",
       }}

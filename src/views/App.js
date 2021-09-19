@@ -27,25 +27,25 @@ const App = (props) => {
           : "Select a mode"}
       </Text>
       <AppLink
-        href={props.mode === "red" ? "/app" : "/app?mode=red"}
-        as={props.mode === "red" ? "/app" : "/app/red"}
+        href={props.mode === "red" ? "#" : "/app?mode=red"}
         mode={props.mode}
+        disabled={props.mode === "red"}
         bg="red"
       >
         Red
       </AppLink>
       <AppLink
-        href={props.mode === "green" ? "/app" : "/app?mode=green"}
-        as={props.mode === "green" ? "/app" : "/app/green"}
+        href={props.mode === "green" ? "#" : "/app?mode=green"}
         mode={props.mode}
+        disabled={props.mode === "green"}
         bg="green"
       >
         Green
       </AppLink>
       <AppLink
-        href={props.mode === "blue" ? "/app" : "/app?mode=blue"}
-        as={props.mode === "blue" ? "/app" : "/app/blue"}
+        href={props.mode === "blue" ? "#" : "/app?mode=blue"}
         mode={props.mode}
+        disabled={props.mode === "blue"}
         bg="blue"
       >
         Blue
