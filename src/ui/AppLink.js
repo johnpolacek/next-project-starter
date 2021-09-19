@@ -3,7 +3,7 @@ import { Link as A } from "theme-ui"
 import Link from "next/link"
 
 const AppLink = ({ children, href, bg, mode, disabled }) => (
-  <Link passHref href={disabled ? "#" : href }>
+  <Link passHref href={disabled ? "#" : href}>
     <A
       sx={{
         border: "2px solid",
