@@ -1,8 +1,8 @@
-import { Button } from "theme-ui"
+import { Button as Btn } from "theme-ui"
 
-export default (props) => (
-  <Button
-    disabled={props.disabled}
+const Button = ({ disabled, children }) => (
+  <Btn
+    disabled={disabled}
     sx={{
       fontSize: 3,
       px: 3,
@@ -14,6 +14,9 @@ export default (props) => (
       border: "none",
       cursor: "pointer",
     }}
-    {...props}
-  />
+  >
+    {children}
+  </Btn>
 )
+
+export default Button
