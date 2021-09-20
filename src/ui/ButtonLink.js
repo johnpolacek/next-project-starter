@@ -1,11 +1,9 @@
 import { Link as A } from "theme-ui"
-import PropTypes from "prop-types"
 import Link from "next/link"
 
-const ButtonLink = (props) => (
-  <Link as={props.as || props.href} href={props.href}>
+const ButtonLink = ({ href, children }) => (
+  <Link href={href}>
     <A
-      disabled={props.disabled}
       sx={{
         textDecoration: "none",
         fontSize: 3,
@@ -19,14 +17,10 @@ const ButtonLink = (props) => (
         cursor: "pointer",
         display: "inline-block",
       }}
-      {...props}
-    />
+    >
+      {children}
+    </A>
   </Link>
 )
-
-ButtonLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  as: PropTypes.string,
-}
 
 export default ButtonLink
