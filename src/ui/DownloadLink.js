@@ -1,7 +1,6 @@
 import { Link, Image } from "theme-ui"
-import PropTypes from "prop-types"
 
-const DownloadLink = (props) => (
+const DownloadLink = () => (
   <Link
     sx={{
       textDecoration: "none",
