@@ -1,12 +1,11 @@
 import { Link as A } from "theme-ui"
-import PropTypes from "prop-types"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
-const NavLink = (props) => {
+const NavLink = ({ children, href }) => {
   const router = useRouter()
   return (
-    <Link href={props.href}>
+    <Link href={href} passHref>
       <A
         sx={{
           py: [2, 3],
@@ -17,18 +16,13 @@ const NavLink = (props) => {
           textDecoration: "none",
           borderBottom: "1px solid",
           borderColor:
-            router.pathname === props.href && props.href !== "/"
-              ? "primary"
-              : "white",
+            router.pathname === href && href !== "/" ? "primary" : "white",
         }}
-        {...props}
-      />
+      >
+        {children}
+      </A>
     </Link>
   )
-}
-
-NavLink.propTypes = {
-  href: PropTypes.string.isRequired,
 }
 
 export default NavLink

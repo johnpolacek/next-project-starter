@@ -1,7 +1,7 @@
 import { Text } from "theme-ui"
 import NavLink from "./NavLink"
 
-const NavHome = (props) => (
+const NavHome = () => (
   <NavLink href="/">
     <Text
       as="h1"

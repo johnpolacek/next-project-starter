@@ -1,26 +1,25 @@
 import { Box } from "theme-ui"
-import PropTypes from "prop-types"
 import Head from "./Head"
 import Style from "./Style"
 import Main from "../ui/Main"
 import Transition from "./Transition"
 
-const Layout = (props) => (
+const Layout = ({
+  title,
+  description,
+  url,
+  imageUrl,
+  imageAlt,
+  twitter,
+  children,
+}) => (
   <>
-    <Head {...props} />
+    <Head {...{ title, description, url, imageUrl, imageAlt, twitter }} />
     <Main>
-      <Transition>{props.children}</Transition>
+      <Transition>{children}</Transition>
     </Main>
     <Style />
   </>
 )
-
-Layout.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string,
-  imageAlt: PropTypes.string,
-}
 
 export default Layout

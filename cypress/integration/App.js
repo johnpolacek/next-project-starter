@@ -1,4 +1,4 @@
-const modes = [ "Green", "Blue", "Red" ]
+const modes = ["Green", "Blue", "Red"]
 
 describe("App", function () {
   it("loads", function () {

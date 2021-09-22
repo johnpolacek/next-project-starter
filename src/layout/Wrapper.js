@@ -3,7 +3,15 @@ import { AppProvider } from "../context/AppContext"
 import Layout from "./Layout"
 import Theme from "./Theme"
 
-const Wrapper = (props) => {
+const Wrapper = ({
+  title,
+  description,
+  url,
+  imageUrl,
+  imageAlt,
+  twitter,
+  children,
+}) => {
   // Want Google Analytics? --> https://github.com/react-ga/react-ga --> add your UI code below
   // ReactGA.initialize("UA-1234567-89")
   // ReactGA.set({ anonymizeIp: true })
@@ -14,7 +22,17 @@ const Wrapper = (props) => {
   return (
     <ThemeProvider theme={Theme}>
       <AppProvider>
-        <Layout {...props} />
+        <Layout
+          {...{
+            title,
+            description,
+            url,
+            imageUrl,
+            imageAlt,
+            twitter,
+            children,
+          }}
+        />
       </AppProvider>
     </ThemeProvider>
   )

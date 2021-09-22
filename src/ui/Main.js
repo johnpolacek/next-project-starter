@@ -2,7 +2,7 @@ import { Box } from "theme-ui"
 import React, { useContext } from "react"
 import { AppContext } from "../context/AppContext"
 
-const Main = (props) => {
+const Main = ({ children }) => {
   const { mode } = useContext(AppContext)
 
   return (
@@ -21,8 +21,9 @@ const Main = (props) => {
         borderTop: "solid 1px",
         borderColor: mode ? mode : "#EEE",
       }}
-      {...props}
-    />
+    >
+      {children}
+    </Box>
   )
 }
 

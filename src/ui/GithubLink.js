@@ -1,6 +1,6 @@
 import { Link } from "theme-ui"
 
-const GithubLink = (props) => (
+const GithubLink = () => (
   <Link
     href="https://github.com/johnpolacek/project-starter"
     title="Go to Project on Github"

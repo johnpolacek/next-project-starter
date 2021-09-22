@@ -1,7 +1,6 @@
 import { Box, Text, Link } from "theme-ui"
-import PropTypes from "prop-types"
 
-const Feature = (props) => (
+const Feature = ({ href, title, benefits }) => (
   <Box
     sx={{
       width: ["100%", "50%", "33.33%"],
@@ -9,10 +8,10 @@ const Feature = (props) => (
     }}
   >
     <Text as="h3" sx={{ fontSize: 4, color: "primary", pb: 3 }}>
-      {props.title}
+      {title}
     </Text>
     <Box as="ul" sx={{ p: 0, m: 0 }}>
-      {props.benefits.map((b) => (
+      {benefits.map((b) => (
         <Box
           as="li"
           key={b.toLowerCase().split(" ").join("-")}
@@ -22,9 +21,9 @@ const Feature = (props) => (
         </Box>
       ))}
     </Box>
-    {props.href && (
+    {href && (
       <Link
-        href={props.href}
+        href={href}
         sx={{ display: "block", fontStyle: "italic", mt: 3, fontSize: 0 }}
       >
         Find out more
@@ -32,11 +31,5 @@ const Feature = (props) => (
     )}
   </Box>
 )
-
-Feature.propTypes = {
-  title: PropTypes.string.isRequired,
-  benefits: PropTypes.arrayOf(PropTypes.string).isRequired,
-  href: PropTypes.string,
-}
 
 export default Feature

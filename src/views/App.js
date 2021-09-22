@@ -3,14 +3,14 @@ import React, { useContext, useEffect } from "react"
 import { AppContext } from "../context/AppContext"
 import AppLink from "../ui/AppLink"
 
-const App = (props) => {
+const App = ({ mode }) => {
   const { setMode } = useContext(AppContext)
 
   // useEffect updates the AppContext mode when the url route changes
   // see <Main />
   useEffect(() => {
-    setMode(props.mode)
-  }, [props.mode])
+    setMode(mode)
+  }, [mode])
 
   return (
     <Box
@@ -21,31 +21,29 @@ const App = (props) => {
         pb: 5,
       }}
     >
-      <Text as="h2" sx={{ pb: 4, color: props.mode ? "white" : "black" }}>
-        {props.mode
-          ? "You selected " + props.mode.toUpperCase()
-          : "Select a mode"}
+      <Text as="h2" sx={{ pb: 4, color: mode ? "white" : "black" }}>
+        {mode ? "You selected " + mode.toUpperCase() : "Select a mode"}
       </Text>
       <AppLink
-        href={props.mode === "red" ? "#" : "/app?mode=red"}
-        mode={props.mode}
-        disabled={props.mode === "red"}
+        href={mode === "red" ? "#" : "/app?mode=red"}
+        mode={mode}
+        disabled={mode === "red"}
         bg="red"
       >
         Red
       </AppLink>
       <AppLink
-        href={props.mode === "green" ? "#" : "/app?mode=green"}
-        mode={props.mode}
-        disabled={props.mode === "green"}
+        href={mode === "green" ? "#" : "/app?mode=green"}
+        mode={mode}
+        disabled={mode === "green"}
         bg="green"
       >
         Green
       </AppLink>
       <AppLink
-        href={props.mode === "blue" ? "#" : "/app?mode=blue"}
-        mode={props.mode}
-        disabled={props.mode === "blue"}
+        href={mode === "blue" ? "#" : "/app?mode=blue"}
+        mode={mode}
+        disabled={mode === "blue"}
         bg="blue"
       >
         Blue

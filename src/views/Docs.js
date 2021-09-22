@@ -2,7 +2,7 @@ import { Box } from "theme-ui"
 import { MDXProvider } from "@mdx-js/react"
 import MarkdownContent from "../../README.md"
 
-const Docs = (props) => (
+const Docs = () => (
   <MDXProvider>
     <Box
       id="docs"
