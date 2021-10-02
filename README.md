@@ -72,4 +72,4 @@ The deploy script in `package.json` will run tests, push to master then deploy t
 npm run deploy
 ```
 
-The first time your run the script you will need to set up your [zeit](https://zeit.co) account and configure your project for deployment.
+The first time your run the script you will need to set up your [vercel](https://vercel.com) account and configure your project for deployment.
